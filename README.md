@@ -25,7 +25,7 @@ python tetration_key_check.py --tetration https://example.com --credentials api_
 
 Or you can supply the API key and secret as command-line arguments:
 
-```python
+```
 python tetration_key_check.py --tetration https://example.com --api_key XXXX --api_secret YYYY
 ```
 
@@ -33,7 +33,7 @@ python tetration_key_check.py --tetration https://example.com --api_key XXXX --a
 
 `test_suite.py` was created in order to validate the functionality of the script that tests one API key/secret at a time. This tests multiple key/secret pairs (stored in a JSON file) against their *expected* values. I don't expect most people to run `test_suite.py` but included it here for completeness.
 
-```python
+```
 python test_suite.py --tetration https://example.com --credentials example.json
 ```
 
