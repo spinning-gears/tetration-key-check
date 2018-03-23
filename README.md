@@ -19,7 +19,7 @@ As of Tetration 2.X, the following capabilities exist in Tetration:
 
 In order to test one API key at a time, you can supply the API key and secret as a JSON credentials file:
 
-```python
+```
 python tetration_key_check.py --tetration https://example.com --credentials api_credentials.json
 ```
 
