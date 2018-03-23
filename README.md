@@ -29,6 +29,14 @@ Or you can supply the API key and secret as command-line arguments:
 python tetration_key_check.py --tetration https://example.com --api_key XXXX --api_secret YYYY
 ```
 
+Either way you run it, the result should look like one of the following (an empty list or a list with one or more strings in it):
+
+```
+[]
+["user_role_scope_management"]
+["flow_inventory_query", "app_policy_management", "user_data_upload"]
+```
+
 ## Testing many API keys
 
 `test_suite.py` was created in order to validate the functionality of the script that tests one API key/secret at a time. This tests multiple key/secret pairs (stored in a JSON file) against their *expected* values. I don't expect most people to run `test_suite.py` but included it here for completeness.
